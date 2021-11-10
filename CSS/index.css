@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 20px 0;
+  /* width: 100%; */
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+header .logo h1 {
+  font-family: "Chewy", cursive;
+  font-size: 42px;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header nav button {
+  padding: 8px 25px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+header nav button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+header li a::before {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  transition: all 0.2s;
+  margin-top: 0.7px;
+  transform: translateX(100%);
+}
+
+header li a::after {
+  content: "";
+  height: 2.3px;
+  background-color: #fff;
+  display: block;
+  width: 0px;
+  transition: all 0.3s;
+  margin-top: 0.7px;
+}
+
+header li:hover a::after {
+  width: 100%;
+}
+header li:hover a::before {
+  transform: none;
+}
+/* background */
+.background {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(https://scontent.fsgn5-10.fna.fbcdn.net/v/t1.15752-9/254921132_428139535493253_8753496221275909187_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=24pGoMc025wAX-Qn9xY&_nc_ht=scontent.fsgn5-10.fna&oh=5658b7d520dc6829fea60db4d26a63c2&oe=61B1A860);
+}
